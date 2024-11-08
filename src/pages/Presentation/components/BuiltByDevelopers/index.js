@@ -47,7 +47,7 @@ function BuiltByDevelopers() {
       <Container>
         <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
           <MKTypography variant="h4" color="white" fontWeight="bold">
-            Word from our CEO and chief innovator
+            Word from our CEO and chief innovator.
           </MKTypography>
           <MKTypography variant="h1" color="white" mb={1}>
             Trifun Savić
