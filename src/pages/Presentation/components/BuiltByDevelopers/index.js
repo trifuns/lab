@@ -22,10 +22,11 @@ import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function BuiltByDevelopers() {
-  const bgImage =
-    "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
+// Images
+import bgImageImport from "assets/images/bg-trifun.jpg";
 
+function BuiltByDevelopers() {
+  const bgImage = bgImageImport;
   return (
     <MKBox
       display="flex"
@@ -46,10 +47,10 @@ function BuiltByDevelopers() {
       <Container>
         <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
           <MKTypography variant="h4" color="white" fontWeight="bold">
-            Built by developers
+            Word from our CEO and chief innovator
           </MKTypography>
           <MKTypography variant="h1" color="white" mb={1}>
-            Complex Documentation
+            Trifun Savić
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
             From colors, cards, typography to complex elements, you will find the full

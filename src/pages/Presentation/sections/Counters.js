@@ -31,10 +31,10 @@ function Counters() {
         <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={70}
+              count={10}
               suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
+              title="Partners"
+              description="From all industries."
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
@@ -42,16 +42,16 @@ function Counters() {
             <DefaultCounterCard
               count={15}
               suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
+              title="Projects Realized"
+              description="Our experts deployed sensors on 3 contintents."
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
               count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
+              title="Ongoing Projects"
+              description="We strive for new challenges constantly."
             />
           </Grid>
         </Grid>

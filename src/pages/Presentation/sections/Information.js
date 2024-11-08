@@ -27,8 +27,8 @@ import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-import bgFront from "assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import bgFront from "assets/images/rotating-card-bg-front.webp";
+import bgBack from "assets/images/rotating-card-bg-back.webp";
 
 function Information() {
   return (
@@ -40,23 +40,17 @@ function Information() {
               <RotatingCardFront
                 image={bgFront}
                 icon="touch_app"
-                title={
-                  <>
-                    Feel the
-                    <br />
-                    Material Kit
-                  </>
-                }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                title={<>Our Expertise</>}
+                description="Firmware/Hardware Development of Low-power IoT Devices."
               />
               <RotatingCardBack
                 image={bgBack}
                 title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                description="From a Great Idea to a Fully Functional Prototye."
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "start",
                 }}
               />
             </RotatingCard>
@@ -66,16 +60,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  title="IoT Hardware Design"
+                  description="From PCB design to custom sensor development, we provide complete hardware solutions."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="devices"
+                  title="Firmware Development"
+                  description="We develop optimized firmware for IoT devices, including communication protocols and power management."
                 />
               </Grid>
             </Grid>
@@ -83,15 +76,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  title="Testing and Validation"
+                  description=" Ensuring quality and performance through thorough device testing and validation."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  title="Industrialization"
+                  description="From prototype to production, we help scale IoT solutions efficiently, covering manufacturing setup, compliance testing, and quality control."
                 />
               </Grid>
             </Grid>

@@ -75,6 +75,7 @@ function Presentation() {
             <MKTypography
               variant="h1"
               color="white"
+              textAlign="center"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -83,7 +84,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Custom IoT Solutions for Innovative Projects{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,8 +93,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Empowering your ideas with expert hardware and firmware development.
             </MKTypography>
           </Grid>
         </Container>
@@ -109,10 +109,10 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
         <Information />
-        <DesignBlocks />
         <Pages />
+        <Counters />
+        <DesignBlocks />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
