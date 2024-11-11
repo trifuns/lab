@@ -41,7 +41,7 @@ function Information() {
                 image={bgFront}
                 icon="touch_app"
                 title={<>Our Expertise</>}
-                description="Firmware/Hardware Development of Low-power IoT Devices."
+                description="Providing Turnkey IoT Solutions."
               />
               <RotatingCardBack
                 image={bgBack}
@@ -50,7 +50,7 @@ function Information() {
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start",
+                  label: "Contact Us",
                 }}
               />
             </RotatingCard>
@@ -59,14 +59,14 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
+                  icon="memory"
                   title="IoT Hardware Design"
                   description="From PCB design to custom sensor development, we provide complete hardware solutions."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
+                  icon="terminal"
                   title="Firmware Development"
                   description="We develop optimized firmware for IoT devices, including communication protocols and power management."
                 />
@@ -75,14 +75,14 @@ function Information() {
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
+                  icon="verified"
                   title="Testing and Validation"
                   description=" Ensuring quality and performance through thorough device testing and validation."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
+                  icon="precision_manufacturing"
                   title="Industrialization"
                   description="From prototype to production, we help scale IoT solutions efficiently, covering manufacturing setup, compliance testing, and quality control."
                 />

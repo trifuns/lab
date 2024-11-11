@@ -22,7 +22,8 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+//import MKBadge from "components/MKBadge";
+import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -50,39 +51,35 @@ function Pages() {
           lg={6}
           flexDirection="column"
           alignItems="center"
-          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
+          sx={{ textAlign: "center", mt: 1, mb: 9, mx: "auto", px: 0.75 }}
         >
+          <MKButton variant="contained" color="info" container sx={{ mb: 2 }}>
+            let&apos;s innovate together
+          </MKButton>
           <MKTypography variant="h2" fontWeight="bold">
             Why Choose Us?
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            Expertise - Decades of combined experience in IoT and electronics.
+            Expertise - Decade of experience in IoT and electronics.
           </MKTypography>
-          <MKBadge
-            variant="contained"
-            color="info"
-            badgeContent="let's innovate together"
-            container
-            sx={{ mb: 2 }}
-          />
         </Grid>
       </Container>
       <Container sx={{ mt: { xs: 8, lg: 16 } }}>
         <Grid container spacing={3}>
+          <Grid item xs={12} lg={3}>
+            <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
+              <MKTypography variant="h3" fontWeight="bold" mb={1}>
+                Our Services
+              </MKTypography>
+              <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                End-to-End IoT Solutions: From Concept to Market-Ready Devices.
+              </MKTypography>
+            </MKBox>
+          </Grid>
           <Grid item xs={12} lg={9} sx={{ mt: 3, px: { xs: 0, lg: 8 } }}>
             <Grid container spacing={3}>
               {renderData}
             </Grid>
-          </Grid>
-          <Grid item xs={12} lg={3}>
-            <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
-              <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                Featured Projects
-              </MKTypography>
-              <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                Our succesfull stories.
-              </MKTypography>
-            </MKBox>
           </Grid>
         </Grid>
       </Container>

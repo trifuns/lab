@@ -13,8 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
+// Images
+import dummyImage from "assets/images/city-profile.jpg";
 
 export default [
   {
@@ -22,40 +22,22 @@ export default [
     description: "Discover what is new in the field of IoT.",
     items: [
       {
-        image: `${imagesPrefix}/headers.jpg`,
-        name: "Page Headers",
+        image: dummyImage,
+        name: "News 1",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `${imagesPrefix}/features.jpg`,
-        name: "Features",
+        image: dummyImage,
+        name: "News 2",
         count: 14,
         route: "/sections/page-sections/features",
       },
       {
-        image: `${imagesPrefix}/pricing.jpg`,
-        name: "Pricing",
+        image: dummyImage,
+        name: "News 3",
         count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/faq.jpg`,
-        name: "FAQ",
-        count: 1,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/blogs.jpg`,
-        name: "Blog Posts",
-        count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/testimonials.jpg`,
-        name: "Testimonials",
-        count: 11,
-        pro: true,
+        route: "/sections/page-sections/features",
       },
     ],
   },

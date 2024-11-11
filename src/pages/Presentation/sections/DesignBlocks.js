@@ -32,7 +32,7 @@ import data from "pages/Presentation/sections/data/designBlocksData";
 
 function DesignBlocks() {
   const renderData = data.map(({ title, description, items }) => (
-    <Grid container spacing={3} sx={{ mb: 10 }} key={title}>
+    <Grid container spacing={3} sx={{ mb: 2 }} key={title}>
       <Grid item xs={12} lg={3}>
         <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
           <MKTypography variant="h3" fontWeight="bold" mb={1}>
@@ -59,31 +59,6 @@ function DesignBlocks() {
 
   return (
     <MKBox component="section" my={6} py={6}>
-      <Container>
-        <Grid
-          container
-          item
-          xs={12}
-          lg={6}
-          flexDirection="column"
-          alignItems="center"
-          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
-        >
-          {/*<MKBadge
-            variant="contained"
-            color="info"
-            badgeContent="Infinite combinations"
-            container
-            sx={{ mb: 2 }}
-          />
-          <MKTypography variant="h2" fontWeight="bold">
-            Latest News
-          </MKTypography>
-          <MKTypography variant="body1" color="text">
-            Discover what is new in the field of IoT.
-          </MKTypography>*/}
-        </Grid>
-      </Container>
       <Container sx={{ mt: 6 }}>{renderData}</Container>
     </MKBox>
   );

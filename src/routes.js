@@ -40,13 +40,14 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 
 // @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
+//import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
+//import ContactUs from "layouts/pages/landing-pages/contact-us";
+//import Author from "layouts/pages/landing-pages/author";
+//import SignIn from "layouts/pages/authentication/sign-in";
+import Home from "layouts/pages/presentation";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -70,42 +71,49 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
-    icon: <Icon>dashboard</Icon>,
+    name: "Home",
+    icon: <Icon>home</Icon>,
+    route: "layouts/pages/presentation",
+    component: <Home />,
+  },
+  {
+    name: "Services",
+    icon: <Icon>miscellaneous_services</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
+        name: "Our Services",
         collapse: [
           {
-            name: "about us",
+            name: "Hardware",
             route: "/pages/landing-pages/about-us",
             component: <AboutUs />,
           },
           {
-            name: "contact us",
-            route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
+            name: "Firmware",
+            route: "/pages/landing-pages/about-us",
+            component: <AboutUs />,
           },
           {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
+            name: "Testing",
+            route: "/pages/landing-pages/about-us",
+            component: <AboutUs />,
           },
-        ],
-      },
-      {
-        name: "account",
-        collapse: [
           {
-            name: "sign in",
-            route: "/pages/authentication/sign-in",
-            component: <SignIn />,
+            name: "Industrialization",
+            route: "/pages/landing-pages/about-us",
+            component: <AboutUs />,
           },
         ],
       },
     ],
+  },
+  {
+    name: "Team",
+    icon: <Icon>groups</Icon>,
+    route: "layouts/pages/presentation",
+    component: <Home />,
   },
   {
     name: "sections",
@@ -237,37 +245,6 @@ const routes = [
         ],
       },
     ],
-  },
-  {
-    name: "docs",
-    icon: <Icon>article</Icon>,
-    collapse: [
-      {
-        name: "getting started",
-        description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
-      },
-      {
-        name: "foundation",
-        description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
-      },
-      {
-        name: "components",
-        description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-      },
-      {
-        name: "plugins",
-        description: "Check how you can integrate our plugins",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
-      },
-    ],
-  },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
 

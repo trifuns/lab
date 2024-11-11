@@ -13,29 +13,31 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages";
+// Images
+import hwImage from "assets/images/page-hardware.jpg";
+import fwImage from "assets/images/page-firmware.jpg";
+import testImage from "assets/images/page-testing.jpg";
+import industryImage from "assets/images/page-industrialization.jpg";
 
 export default [
   {
-    image: `${imagesPrefix}/about-us.jpg`,
-    name: "About Us Page",
+    image: hwImage,
+    name: "IoT Hardware Design",
     route: "/pages/landing-pages/about-us",
   },
   {
-    image: `${imagesPrefix}/contact.jpg`,
-    name: "Contact Us Page",
+    image: fwImage,
+    name: "Firmware Development",
     route: "/pages/landing-pages/contact-us",
   },
   {
-    image:
-      "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/account/signin-basic.jpg",
-    name: "Sign In Page",
+    image: testImage,
+    name: "Testing and Validation",
     route: "/pages/authentication/sign-in",
   },
   {
-    image: `${imagesPrefix}/author.jpg`,
-    name: "Author Page",
+    image: industryImage,
+    name: "Industrialization",
     route: "/pages/landing-pages/author",
   },
 ];
