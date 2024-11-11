@@ -46,7 +46,7 @@ import bgImage from "assets/images/bg-presentation.jpg";
 function Presentation() {
   return (
     <>
-      <DefaultNavbar routes={routes} sticky />
+      <DefaultNavbar routes={routes} sticky transparent light />
       <MKBox
         minHeight="75vh"
         width="100%"
