@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.js": "/lab/static/js/main.4eda42b3.js",
+    "main.js": "/lab/static/js/main.6446999c.js",
+    "static/media/smart-marina.jpg": "/lab/static/media/smart-marina.a57544ac2fcf2c39888b.jpg",
     "static/media/bg-presentation.jpg": "/lab/static/media/bg-presentation.05b9f2932951695feaa5.jpg",
     "static/media/macbook.png": "/lab/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
+    "static/media/smart-city.jpg": "/lab/static/media/smart-city.98b1b2df26a1b9bc4702.jpg",
+    "static/media/page-ai.jpg": "/lab/static/media/page-ai.bdb37cfd77b98d2e2ee5.jpg",
     "static/media/page-hardware.jpg": "/lab/static/media/page-hardware.fa17604e7de038c403df.jpg",
     "static/media/city-profile.jpg": "/lab/static/media/city-profile.4d64bba97c3d1757379e.jpg",
+    "static/media/blog-9-4.jpg": "/lab/static/media/blog-9-4.de736e0b751f453415a5.jpg",
     "static/media/rotating-card-bg-front.webp": "/lab/static/media/rotating-card-bg-front.49642fcd7e1a7ad4bbe5.webp",
+    "static/media/illustration-reset.jpg": "/lab/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
+    "static/media/blog2.jpg": "/lab/static/media/blog2.aba7a3cb94805e9557d1.jpg",
     "static/media/page-firmware.jpg": "/lab/static/media/page-firmware.d05d7f40372fe850d790.jpg",
     "static/media/rotating-card-bg-back.webp": "/lab/static/media/rotating-card-bg-back.66f03ac7d4cc6c396f3f.webp",
-    "static/media/bg-trifun.jpg": "/lab/static/media/bg-trifun.16ff352f035b7794f2c5.jpg",
     "static/media/bg-about-us.jpg": "/lab/static/media/bg-about-us.cf9a123e2a3d371d53da.jpg",
-    "static/media/page-testing.jpg": "/lab/static/media/page-testing.e68f9cb4be2fd9e00e20.jpg",
-    "static/media/page-industrialization.jpg": "/lab/static/media/page-industrialization.ad46243a191fa549fe38.jpg",
+    "static/media/page-turnkey.jpg": "/lab/static/media/page-turnkey.419d91072826838e9f65.jpg",
+    "static/media/testimonial-6-2.jpg": "/lab/static/media/testimonial-6-2.21f2048f0b89919090f0.jpg",
+    "static/media/testimonial-6-3.jpg": "/lab/static/media/testimonial-6-3.d35bef0d65354442d063.jpg",
     "static/media/bruce-mars.jpg": "/lab/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "static/media/team-5.jpg": "/lab/static/media/team-5.d59ab7b9f95f1169cf83.jpg",
     "static/media/ivana-square.jpg": "/lab/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
@@ -26,9 +32,9 @@
     "static/media/logo-nasa.svg": "/lab/static/media/logo-nasa.b4e79ad93e48f27643c48621609ba18b.svg",
     "static/media/logo-netflix.svg": "/lab/static/media/logo-netflix.41468e1be7ec61f28c77c2d4da86083e.svg",
     "index.html": "/lab/index.html",
-    "main.4eda42b3.js.map": "/lab/static/js/main.4eda42b3.js.map"
+    "main.6446999c.js.map": "/lab/static/js/main.6446999c.js.map"
   },
   "entrypoints": [
-    "static/js/main.4eda42b3.js"
+    "static/js/main.6446999c.js"
   ]
 }
