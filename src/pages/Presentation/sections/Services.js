@@ -82,7 +82,7 @@ function Pages() {
                 Services
               </MKTypography>
               <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                End-to-End IoT Solutions: From Concept to Market-Ready Devices.
+                From Concept to Market-Ready Devices.
               </MKTypography>
             </MKBox>
           </Grid>

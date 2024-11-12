@@ -82,7 +82,7 @@ const routes = [
           },
           {
             name: "Artificial Intelligence",
-            route: "/pages/landing-pages/ArtificialIntelligence",
+            route: "/pages/landing-pages/artificial-intelligence",
             component: <ArtificialIntelligence />,
           },
           {

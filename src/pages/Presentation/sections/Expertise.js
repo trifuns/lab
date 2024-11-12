@@ -46,10 +46,10 @@ function Pages() {
           <Grid item xs={12} lg={3}>
             <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
               <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                Expertise
+                Experience
               </MKTypography>
               <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                Check out our experience with a case study.
+                Take a look at our different case study.
               </MKTypography>
             </MKBox>
           </Grid>

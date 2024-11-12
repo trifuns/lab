@@ -84,7 +84,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              We provide end-to-end IoT solutions, from hardware design and programming, to data
+              We provide end-to-end IoT solutions. From hardware design and programming, to data
               processing and visualization.
             </MKTypography>
             <MKButton

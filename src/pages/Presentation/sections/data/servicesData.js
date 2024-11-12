@@ -33,7 +33,7 @@ export default [
   {
     image: aiImage,
     name: "Artificial Intelligence",
-    route: "/pages/authentication/artificial-intelligence",
+    route: "/pages/landing-pages/artificial-intelligence",
   },
   {
     image: turnkeyImage,
