@@ -49,7 +49,7 @@ function Information() {
                 description="From a Great Idea to a Fully Functional Prototye."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
+                  route: "/pages/landing-pages/contact-us",
                   label: "Contact Us",
                 }}
               />

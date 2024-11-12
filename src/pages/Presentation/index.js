@@ -17,10 +17,12 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
+import MuiLink from "@mui/material/Link";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -28,13 +30,14 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Presentation page sections
 import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
+import News from "pages/Presentation/sections/News";
+import Services from "pages/Presentation/sections/Services";
+import Expertise from "pages/Presentation/sections/Expertise";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import ContactForm from "pages/Presentation/sections/ContactForm";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+//import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
@@ -46,7 +49,7 @@ import bgImage from "assets/images/bg-presentation.jpg";
 function Presentation() {
   return (
     <>
-      <DefaultNavbar routes={routes} sticky transparent light />
+      <DefaultNavbar routes={routes} transparent light />
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -72,7 +75,7 @@ function Presentation() {
                 },
               })}
             >
-              Custom IoT Solutions{" "}
+              Complete Intelligent Solutions{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -81,8 +84,22 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Empowering your ideas with expert hardware and firmware development.
+              We provide end-to-end IoT solutions, from hardware design and programming, to data
+              processing and visualization.
             </MKTypography>
+            <MKButton
+              component={MuiLink}
+              href={"/pages/landing-pages/contact-us"}
+              target="_blank"
+              rel="noreferrer"
+              size="large"
+              variant="contained"
+              color="info"
+              container
+              sx={{ my: 6 }}
+            >
+              Contact Us
+            </MKButton>
           </Grid>
         </Container>
       </MKBox>
@@ -98,11 +115,9 @@ function Presentation() {
         }}
       >
         <Information />
-        <Pages />
-        <Container sx={{ mt: 12, mb: 6 }}>
-          <BuiltByDevelopers />
-        </Container>
-        <DesignBlocks />
+        <Services />
+        <Expertise />
+        <News />
         <Testimonials />
         <ContactForm />
       </Card>

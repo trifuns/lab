@@ -43,32 +43,18 @@ import Icon from "@mui/material/Icon";
 //import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
-//import ContactUs from "layouts/pages/landing-pages/contact-us";
-//import Author from "layouts/pages/landing-pages/author";
-//import SignIn from "layouts/pages/authentication/sign-in";
 import Home from "layouts/pages/presentation";
-/*
-// Sections
-import PageHeaders from "layouts/sections/page-sections/page-headers";
-import Features from "layouts/sections/page-sections/featuers";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
-import Pagination from "layouts/sections/navigation/pagination";
-import Inputs from "layouts/sections/input-areas/inputs";
-import Forms from "layouts/sections/input-areas/forms";
-import Alerts from "layouts/sections/attention-catchers/alerts";
-import Modals from "layouts/sections/attention-catchers/modals";
-import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
-import Avatars from "layouts/sections/elements/avatars";
-import Badges from "layouts/sections/elements/badges";
-import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
-import Buttons from "layouts/sections/elements/buttons";
-import Dropdowns from "layouts/sections/elements/dropdowns";
-import ProgressBars from "layouts/sections/elements/progress-bars";
-import Toggles from "layouts/sections/elements/toggles";
-import Typography from "layouts/sections/elements/typography";
-*/
+import Hardware from "layouts/pages/landing-pages/hardware";
+import Software from "layouts/pages/landing-pages/software";
+import ArtificialIntelligence from "layouts/pages/landing-pages/artificial-intelligence";
+import TurnkeySolutions from "layouts/pages/landing-pages/turnkey-solutions";
+import SmartCity from "layouts/pages/landing-pages/smart-city";
+import SmartMarina from "layouts/pages/landing-pages/smart-marina";
+import AboutUs from "pages/LandingPages/AboutUs";
+import Career from "layouts/pages/landing-pages/career";
+import ContactUs from "layouts/pages/landing-pages/contact-us";
+import Author from "layouts/pages/landing-pages/author";
+
 const routes = [
   {
     name: "Home",
@@ -83,43 +69,86 @@ const routes = [
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "Our Services",
         collapse: [
           {
             name: "Hardware",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            route: "/pages/landing-pages/hardware",
+            component: <Hardware />,
           },
           {
-            name: "Firmware",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            name: "Software",
+            route: "/pages/landing-pages/software",
+            component: <Software />,
           },
           {
-            name: "Testing",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            name: "Artificial Intelligence",
+            route: "/pages/landing-pages/ArtificialIntelligence",
+            component: <ArtificialIntelligence />,
           },
           {
-            name: "Industrialization",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            name: "Turnkey Solutions",
+            route: "/pages/landing-pages/turnkey-solutions",
+            component: <TurnkeySolutions />,
           },
         ],
       },
     ],
   },
   {
-    name: "Team",
+    name: "Expertise",
+    icon: <Icon>lightbulb</Icon>,
+    columns: 1,
+    rowsPerColumn: 2,
+    collapse: [
+      {
+        collapse: [
+          {
+            name: "Smart City",
+            route: "/pages/landing-pages/smart-city",
+            component: <SmartCity />,
+          },
+          {
+            name: "Smart Marina",
+            route: "/pages/landing-pages/smart-marina",
+            component: <SmartMarina />,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "About Us",
     icon: <Icon>groups</Icon>,
-    route: "layouts/pages/presentation",
-    component: <Home />,
+    columns: 1,
+    rowsPerColumn: 2,
+    collapse: [
+      {
+        collapse: [
+          {
+            name: "Team",
+            route: "/pages/landing-pages/about-us",
+            component: <AboutUs />,
+          },
+          {
+            name: "Career",
+            route: "/pages/landing-pages/career",
+            component: <Career />,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "News",
+    icon: <Icon>article</Icon>,
+    route: "/pages/landing-pages/author",
+    component: <Author />,
   },
   {
     name: "Contact Us",
     icon: <Icon>email</Icon>,
-    route: "layouts/pages/presentation",
-    component: <Home />,
+    route: "/pages/landing-pages/contact-us",
+    component: <ContactUs />,
   },
   /*{
     name: "sections",

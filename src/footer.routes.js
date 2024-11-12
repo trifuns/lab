@@ -14,7 +14,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "R&D Lab",
+    name: "SAVIC R&D",
     image: logoCT,
     route: "/",
   },
@@ -74,7 +74,7 @@ export default {
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      &copy; {date} R&D Lab | All rights reserved.
+      &copy; {date} SAVIC R&D | All rights reserved.
     </MKTypography>
   ),
 };
