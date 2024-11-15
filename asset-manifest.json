@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/lab/static/js/main.d4a7b987.js",
+    "main.js": "/lab/static/js/main.c23e1254.js",
     "static/media/smart-marina.jpg": "/lab/static/media/smart-marina.a57544ac2fcf2c39888b.jpg",
     "static/media/bg-presentation.jpg": "/lab/static/media/bg-presentation.05b9f2932951695feaa5.jpg",
     "static/media/macbook.png": "/lab/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
@@ -32,9 +32,9 @@
     "static/media/logo-nasa.svg": "/lab/static/media/logo-nasa.b4e79ad93e48f27643c48621609ba18b.svg",
     "static/media/logo-netflix.svg": "/lab/static/media/logo-netflix.41468e1be7ec61f28c77c2d4da86083e.svg",
     "index.html": "/lab/index.html",
-    "main.d4a7b987.js.map": "/lab/static/js/main.d4a7b987.js.map"
+    "main.c23e1254.js.map": "/lab/static/js/main.c23e1254.js.map"
   },
   "entrypoints": [
-    "static/js/main.d4a7b987.js"
+    "static/js/main.c23e1254.js"
   ]
 }
