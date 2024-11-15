@@ -56,8 +56,6 @@ function Pages() {
           <MKButton
             component={MuiLink}
             href={"/pages/landing-pages/contact-us"}
-            target="_blank"
-            rel="noreferrer"
             size="large"
             variant="contained"
             color="info"

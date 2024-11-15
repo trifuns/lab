@@ -50,7 +50,7 @@ import ArtificialIntelligence from "layouts/pages/landing-pages/artificial-intel
 import TurnkeySolutions from "layouts/pages/landing-pages/turnkey-solutions";
 import SmartCity from "layouts/pages/landing-pages/smart-city";
 import SmartMarina from "layouts/pages/landing-pages/smart-marina";
-import AboutUs from "pages/LandingPages/AboutUs";
+import AboutUs from "layouts/pages/landing-pages/about-us";
 import Career from "layouts/pages/landing-pages/career";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";

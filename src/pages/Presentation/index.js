@@ -36,9 +36,6 @@ import Expertise from "pages/Presentation/sections/Expertise";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import ContactForm from "pages/Presentation/sections/ContactForm";
 
-// Presentation page components
-//import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
-
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
@@ -90,8 +87,6 @@ function Presentation() {
             <MKButton
               component={MuiLink}
               href={"/pages/landing-pages/contact-us"}
-              target="_blank"
-              rel="noreferrer"
               size="large"
               variant="contained"
               color="info"

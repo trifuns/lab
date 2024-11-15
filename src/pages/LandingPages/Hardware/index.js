@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -22,36 +7,41 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
+import MuiLink from "@mui/material/Link";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
-// About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+// Custom Sections for the Hardware Page
+import Features from "pages/LandingPages/Hardware/sections/Features";
+import Process from "pages/LandingPages/Hardware/sections/Process";
+import Testimonials from "pages/LandingPages/Hardware/sections/Testimonials";
+import TestingValidation from "pages/LandingPages/Hardware/sections/TestingValidation";
+import Industrialization from "pages/LandingPages/Hardware/sections/Industrialization";
 
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/page-hardware.jpg";
+import bgImage from "assets/images/page-hardware.jpg"; // Replace with a high-quality image
 
-function AboutUs() {
+function HardwarePage() {
   return (
     <>
+      {/* Navbar */}
       <DefaultNavbar routes={routes} transparent light />
+
+      {/* Hero Section */}
       <MKBox
-        minHeight="75vh"
+        minHeight="90vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
+              rgba(gradients.dark.main, 0.7),
+              rgba(gradients.dark.state, 0.7)
             )}, url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -74,53 +64,52 @@ function AboutUs() {
               variant="h1"
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
+                fontWeight: "bold",
+                [breakpoints.down("md")]: { fontSize: size["3xl"] },
               })}
             >
-              HW
+              Advanced Hardware Engineering
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+            <MKTypography
+              variant="body1"
+              color="white"
+              opacity={0.85}
+              mt={2}
+              mb={4}
+              sx={{ fontSize: "1.2rem" }}
+            >
+              Unlock the power of cutting-edge hardware solutions to drive performance, efficiency,
+              and scalability.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
+            <MKButton
+              component={MuiLink}
+              href={"/pages/landing-pages/contact-us"}
+              size="large"
+              variant="gradient"
+              color="default"
+              sx={{ color: ({ palette: { dark } }) => dark.main }}
+            >
+              Contact Us
             </MKButton>
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox>
           </Grid>
         </Container>
       </MKBox>
+
+      {/* Main Content Card */}
       <Card
         sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -8,
+          p: 4,
+          mx: { xs: 2, lg: 4 },
+          mt: -10,
           mb: 4,
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
-        <Team />
-        <Featuring />
-        <Newsletter />
+        <Features />
+        <Process />
+        <TestingValidation />
+        <Industrialization />
+        <Testimonials />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -129,4 +118,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default HardwarePage;
